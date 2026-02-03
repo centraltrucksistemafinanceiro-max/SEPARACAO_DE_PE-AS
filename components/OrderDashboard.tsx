@@ -226,7 +226,7 @@ const OrderCard: React.FC<{ order: Order; onSelect: (id: string) => void; onDele
       {/* Delete Button */}
       <button 
         onClick={(e) => { e.stopPropagation(); onDelete(order.id); }}
-        className="absolute top-4 right-4 text-slate-600 hover:text-red-400 hover:bg-red-400/10 p-1.5 rounded-lg transition-colors opacity-0 group-hover:opacity-100"
+        className="absolute top-4 right-4 text-slate-600 hover:text-red-400 hover:bg-red-400/10 p-1.5 rounded-lg transition-colors opacity-100 md:opacity-0 md:group-hover:opacity-100"
         title="Remover"
       >
         <Trash2 size={16} />

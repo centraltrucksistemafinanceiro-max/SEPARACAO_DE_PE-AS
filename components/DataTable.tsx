@@ -96,7 +96,7 @@ export const DataTable: React.FC<DataTableProps> = ({ items, onToggleItem, onDel
                 </td>
                 {!readOnly && (
                   <td className="p-4 text-center">
-                    <div className="flex items-center justify-center gap-1 opacity-0 group-hover:opacity-100 transition-opacity">
+                    <div className="flex items-center justify-center gap-1 opacity-100 md:opacity-0 md:group-hover:opacity-100 transition-opacity">
                       {onEditItem && (
                         <button
                           onClick={(e) => {
