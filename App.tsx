@@ -245,8 +245,8 @@ const App: React.FC = () => {
         <div className="min-h-screen bg-[radial-gradient(ellipse_at_top,_var(--tw-gradient-stops))] from-slate-900 via-obsidian-950 to-obsidian-950 p-6 flex flex-col items-center justify-center">
           <div className="max-w-xl w-full">
             <div className="text-center mb-10">
-                <div className="inline-flex p-4 rounded-2xl bg-gradient-to-br from-gold-500 to-gold-600 shadow-xl shadow-gold-500/20 mb-6">
-                  <LayoutDashboard size={40} className="text-black" />
+                <div className="inline-flex p-1 rounded-2xl bg-gradient-to-br from-gold-500 to-gold-600 shadow-xl shadow-gold-500/20 mb-6 overflow-hidden">
+                  <img src="/favicon.png" alt="Central Truck Logo" className="w-20 h-20 object-cover" />
                 </div>
                 <h1 className="text-3xl md:text-4xl font-bold text-white mb-2 uppercase tracking-wide">
                   SEPARAÇÃO DE PEÇAS
@@ -284,8 +284,8 @@ const App: React.FC = () => {
         className="flex items-center gap-4 cursor-pointer hover:opacity-80 transition-opacity"
         onClick={() => { setActiveOrderId(null); setIsUploadMode(false); }}
       >
-        <div className="p-2.5 bg-gradient-to-br from-gold-500 to-gold-600 rounded-lg shadow-lg shadow-gold-500/10 text-black">
-          <Truck size={24} strokeWidth={2.5} />
+        <div className="w-12 h-12 bg-gradient-to-br from-gold-500 to-gold-600 rounded-lg shadow-lg shadow-gold-500/10 overflow-hidden">
+          <img src="/favicon.png" alt="CT" className="w-full h-full object-cover" />
         </div>
         <div>
           <h1 className="text-xl md:text-2xl font-bold text-slate-100 uppercase tracking-tight">

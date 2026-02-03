@@ -42,9 +42,14 @@ export const OrderDashboard: React.FC<OrderDashboardProps> = ({
       <div className="grid grid-cols-1 lg:grid-cols-4 gap-4">
         {/* Welcome / Action Card */}
         <div className="lg:col-span-1 bg-gradient-to-br from-gold-500 to-gold-600 rounded-2xl p-6 shadow-lg shadow-gold-500/10 flex flex-col justify-between text-black">
-          <div>
-            <h2 className="text-2xl font-bold mb-1 uppercase text-slate-900">SEPARAÇÃO DE PEÇAS</h2>
-            <p className="text-black/70 text-sm font-bold tracking-widest">CENTRAL TRUCK</p>
+          <div className="flex items-center gap-4">
+            <div className="w-16 h-16 bg-black rounded-xl overflow-hidden shadow-inner p-1">
+              <img src="/favicon.png" alt="CT Logo" className="w-full h-full object-cover" />
+            </div>
+            <div>
+              <h2 className="text-xl font-bold uppercase text-slate-900 leading-tight">SEPARAÇÃO DE PEÇAS</h2>
+              <p className="text-black/70 text-[10px] font-bold tracking-[0.2em]">CENTRAL TRUCK</p>
+            </div>
           </div>
           <button 
             onClick={onNewOrder}
